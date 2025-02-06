@@ -22,6 +22,11 @@ app.get("/", async(req, res) => {
     }
 })
 
+//get the features page
+app.get("/features", (req, res) => {
+    res.render("features.ejs")
+})
+
 // creat a new post
 app.post("/newpost", async(req, res) => {
     try {
